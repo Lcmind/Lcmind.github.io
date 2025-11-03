@@ -109,7 +109,23 @@ if (scrollIndicator) {
 const projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
+    let isDetailsOpen = false;
+    
+    // details 요소 상태 확인
+    const details = card.querySelector('.project-details');
+    if (details) {
+        details.addEventListener('toggle', () => {
+            isDetailsOpen = details.open;
+            if (isDetailsOpen) {
+                card.style.transform = '';
+            }
+        });
+    }
+    
     card.addEventListener('mousemove', (e) => {
+        // 상세보기가 열려있으면 3D 효과 비활성화
+        if (isDetailsOpen) return;
+        
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
@@ -124,7 +140,9 @@ projectCards.forEach(card => {
     });
     
     card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        if (!isDetailsOpen) {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        }
     });
 });
 
