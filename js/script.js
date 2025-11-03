@@ -106,51 +106,7 @@ if (scrollIndicator) {
 }
 
 // ==================== Project Cards Hover Effect ====================
-const projectCards = document.querySelectorAll('.project-card');
-
-projectCards.forEach(card => {
-    let isDetailsOpen = false;
-    
-    // details 요소 상태 확인
-    const details = card.querySelector('.project-details');
-    if (details) {
-        details.addEventListener('toggle', () => {
-            isDetailsOpen = details.open;
-            // 상세보기 열리면 카드 고정
-            if (isDetailsOpen) {
-                card.style.transform = 'none';
-            }
-        });
-    }
-    
-    card.addEventListener('mousemove', (e) => {
-        // 상세보기가 열려있으면 아무 효과도 안 함
-        if (isDetailsOpen) {
-            card.style.transform = 'none';
-            return;
-        }
-        
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
-        
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        if (!isDetailsOpen) {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-        } else {
-            card.style.transform = 'none';
-        }
-    });
-});
+// 3D 효과 완전히 제거됨 (멀미 방지)
 
 // ==================== Parallax Effect for Hero Section ====================
 window.addEventListener('scroll', () => {

@@ -719,20 +719,53 @@ section {
 }
 
 .report-contribution {
-    background: var(--bg-secondary);
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.report-contribution summary {
     padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
+    background: var(--bg-secondary);
+    cursor: pointer;
+    font-weight: 600;
+    color: #f59e0b;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
-.report-contribution h4 {
-    font-size: 0.9rem;
-    color: var(--primary-color);
-    margin-bottom: 0.75rem;
-    font-weight: 700;
+.report-contribution summary::-webkit-details-marker {
+    display: none;
 }
 
-.report-contribution p {
+.report-contribution summary::after {
+    content: '▼';
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.report-contribution[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.report-contribution summary:hover {
+    background: #f59e0b;
+    color: white;
+}
+
+.contribution-content {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    animation: slideDown 0.3s ease;
+}
+
+.contribution-content p {
     color: var(--text-secondary);
     line-height: 1.8;
     font-size: 0.9rem;
