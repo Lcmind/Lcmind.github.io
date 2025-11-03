@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 히어로 섹션 -->
+    <header id="intro">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="images/profile.jpeg" alt="이창민 프로필" class="profile-image">
+            </div>
+            <h1 class="glitch" data-text="안녕하세요 👋">안녕하세요 👋</h1>
+            <h2 class="name-title">풀스택 개발자 <span class="highlight-name">이창민</span>입니다</h2>
+            <div class="typing-container">
+                <p class="typing-text"><span id="typed-role"></span></p>
+            </div>
+            <p class="hero-description">열정적으로 개발하며 성장하는 개발자입니다</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="#skills" class="btn btn-secondary">기술 스택</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 기술 스택 섹션 -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">🛠️ 기술 스택</h2>
+                <div class="skills-container">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Frontend</h3>
+                        <div class="skill-icons">
+                            <img src="https://skillicons.dev/icons?i=react" alt="React" title="React">
+                            <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter" title="Flutter">
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Backend</h3>
+                        <div class="skill-icons">
+                            <img src="https://skillicons.dev/icons?i=flask" alt="Flask" title="Flask">
+                            <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" title="FastAPI">
+                            <img src="https://skillicons.dev/icons?i=php" alt="PHP" title="PHP">
+                            <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx" title="Nginx">
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Database</h3>
+                        <div class="skill-icons">
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL">
+                            <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" title="Supabase">
+                            <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase">
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Deployment & Cloud</h3>
+                        <div class="skill-icons">
+                            <img src="https://skillicons.dev/icons?i=aws" alt="AWS" title="AWS">
+                            <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" title="Vercel">
+                            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">💻 프로젝트 아카이브</h2>
+                
+                <div class="project-grid">
+                    <!-- 프로젝트 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-number">01</div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/800x450/ff6b6b/ffffff?text=Muckitline" alt="먹킷라인">
+                        </div>
+                        <div class="project-header">
+                            <h3>먹킷라인 (Muckitline)</h3>
+                            <span class="project-type">Mobile Application</span>
+                        </div>
+                        <p class="summary">내 자신만의 맛집 노선도를 만들고, 방문한 식당을 리뷰하며, 친구들과 공유할 수 있는 모바일 애플리케이션</p>
+                        
+                        <details class="project-details">
+                            <summary>📋 프로젝트 상세보기</summary>
+                            <div class="details-content">
+                                <div class="detail-section">
+                                    <h4>💡 기획 동기</h4>
+                                    <p>맛집을 찾는 어플리케이션은 많은 반면, 맛집의 리뷰를 쓰고 리뷰들을 정리해 다음에 가고 싶은 가게를 입맛이 비슷한 사람과 공유하고 싶어서 만들게 되었습니다.</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 나의 역할</h4>
+                                    <p>• 기획 (40%)<br>
+                                    • 전체 시스템 설계, 아키텍처 구성<br>
+                                    • RESTful API 설계 및 백엔드 개발 (100%)<br>
+                                    • 로그인 시스템, 지도 시스템 연결<br>
+                                    • 프론트엔드(70%)와 백엔드 연결</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✨ 주요 기능</h4>
+                                    <p>• 입맛 MBTI 테스트<br>
+                                    • 맛집 저장 및 노선도 구축 (Flame)<br>
+                                    • 입맛 기반 노선도 공유<br>
+                                    • 상점을 통한 노선도 꾸미기<br>
+                                    • 친구들, 타인과 공유하기</p>
+                                </div>
+                            </div>
+                        </details>
+                        
+                        <div class="tech-used">
+                            <h4>사용 기술</h4>
+                            <div class="tech-icons">
+                                <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter">
+                                <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI">
+                                <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
+                                <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase">
+                                <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-demo">🚀 데모 보기</a>
+                            <a href="#" target="_blank" class="btn-code">🔗 GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-number">02</div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/800x450/4facfe/ffffff?text=Focus+Hub" alt="Focus Hub">
+                        </div>
+                        <div class="project-header">
+                            <h3>Focus Hub</h3>
+                            <span class="project-type">PWA Application</span>
+                        </div>
+                        <p class="summary">초소규모 스터디/모임 생산성 도구</p>
+                        
+                        <details class="project-details">
+                            <summary>📋 프로젝트 상세보기</summary>
+                            <div class="details-content">
+                                <div class="detail-section">
+                                    <h4>💡 기획 동기</h4>
+                                    <p>스터디를 하는 중에 카카오톡, 팀즈 등을 사용함에 있어서 정작 필요한 내용이 위로 올라간다는 점을 깨달아 가벼운 스터디 생산성 도구를 만들었습니다.</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 나의 역할</h4>
+                                    <p>• 기획, 백엔드, 데이터베이스 설계 (100%)<br>
+                                    • Supabase를 통한 카카오, 구글 API 연결<br>
+                                    • 프론트엔드 개발 (100%)<br>
+                                    • Vercel을 사용한 프론트 배포</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✨ 주요 기능</h4>
+                                    <p>• URL 코드를 통한 빠른 합류<br>
+                                    • 간단한 로그인<br>
+                                    • 안건 토론, 과제 배분, 정산하기, 투표하기<br>
+                                    • 푸시 알림</p>
+                                </div>
+                            </div>
+                        </details>
+                        
+                        <div class="tech-used">
+                            <h4>사용 기술</h4>
+                            <div class="tech-icons">
+                                <img src="https://skillicons.dev/icons?i=react" alt="React">
+                                <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase">
+                                <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase">
+                                <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-demo">🚀 데모 보기</a>
+                            <a href="#" target="_blank" class="btn-code">🔗 GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-number">03</div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/800x450/f59e0b/ffffff?text=Hooddak" alt="후딱가게">
+                        </div>
+                        <div class="project-header">
+                            <h3>후딱가게 (Hooddak)</h3>
+                            <span class="project-type">Mobile Application</span>
+                        </div>
+                        <p class="summary">사용자의 위치 기반으로 대학교 근처 맛집을 추천하고, 랜덤 추천 기능을 통해 새로운 맛집을 발견할 수 있는 Flutter 기반 모바일 애플리케이션입니다.</p>
+                        
+                        <details class="project-details">
+                            <summary>📋 프로젝트 상세보기</summary>
+                            <div class="details-content">
+                                <div class="detail-section">
+                                    <h4>💡 기획 동기</h4>
+                                    <p>대학교 주변 신입생들이 어떤 가게가 있고 영업시간은 언제인지, 해당 시간에 가게가 혼잡한지 여유로운지, 어떤 음식을 먹어야 할지 모르기에 추천해주고자 만든 애플리케이션입니다.</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 나의 역할</h4>
+                                    <p>• 기획 (40%)<br>
+                                    • 전체 시스템 설계, 아키텍처 구성<br>
+                                    • RESTful API 설계 및 백엔드 개발 (100%)<br>
+                                    • 전체 기능 구현 (100%)<br>
+                                    • 프론트엔드 개발 (70%)<br>
+                                    • 서버 보안, 앱 & 웹 배포, 업데이트</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✨ 주요 기능</h4>
+                                    <p>• 주변 가게 필터링<br>
+                                    • 지도로 빠르게 찾기 (네이버 지도 API)<br>
+                                    • 랜덤 추천 기능<br>
+                                    • 혼잡도 투표 기능<br>
+                                    • Redis 캐싱<br>
+                                    • 룰렛 추천 기능</p>
+                                </div>
+                            </div>
+                        </details>
+                        
+                        <div class="tech-used">
+                            <h4>사용 기술</h4>
+                            <div class="tech-icons">
+                                <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter">
+                                <img src="https://skillicons.dev/icons?i=flask" alt="Flask">
+                                <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx">
+                                <img src="https://skillicons.dev/icons?i=aws" alt="AWS">
+                                <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-demo">🚀 데모 보기</a>
+                            <a href="#" target="_blank" class="btn-code">🔗 GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 4 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-number">04</div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/800x450/10b981/ffffff?text=Plant+Game" alt="주인나죽어">
+                        </div>
+                        <div class="project-header">
+                            <h3>주인나죽어</h3>
+                            <span class="project-type">PC Game</span>
+                        </div>
+                        <p class="summary">Unity로 제작한 식물 육성 및 도감 수집 게임입니다</p>
+                        
+                        <details class="project-details">
+                            <summary>📋 프로젝트 상세보기</summary>
+                            <div class="details-content">
+                                <div class="detail-section">
+                                    <h4>💡 기획 동기</h4>
+                                    <p>병맛 컨셉과 수집욕을 자극시키는 에셋을 넣어 재미있는 게임을 만들어보자는 취지로 시작되었습니다.</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 나의 역할</h4>
+                                    <p>• 기획 (50%)<br>
+                                    • 아키텍처 설계, 에셋 구성 (70%)<br>
+                                    • 픽셀 이미지 드로잉 (40%)<br>
+                                    • 충돌, 배치, 도감 설계</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✨ 주요 기능</h4>
+                                    <p>• 자연재해로 인한 식물 데미지 추적<br>
+                                    • 자연재해에 따른 올바른 아이템 배치<br>
+                                    • 식물 성장 후 도감에 저장<br>
+                                    • 저장된 식물 확인</p>
+                                </div>
+                            </div>
+                        </details>
+                        
+                        <div class="tech-used">
+                            <h4>사용 기술</h4>
+                            <div class="tech-icons">
+                                <img src="https://skillicons.dev/icons?i=unity" alt="Unity">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-demo">🚀 데모 보기</a>
+                            <a href="#" target="_blank" class="btn-code">🔗 GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 5 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-number">05</div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/800x450/fbbf24/ffffff?text=JoinTaxi" alt="조인택시">
+                        </div>
+                        <div class="project-header">
+                            <h3>조인택시 (JoinTaxi)</h3>
+                            <span class="project-type">Website</span>
+                        </div>
+                        <p class="summary">대학교 학생들을 위한 택시 쉐어링 웹사이트</p>
+                        
+                        <details class="project-details">
+                            <summary>📋 프로젝트 상세보기</summary>
+                            <div class="details-content">
+                                <div class="detail-section">
+                                    <h4>💡 기획 동기</h4>
+                                    <p>학교가 지방에 있어 터미널까지 소요시간이 길어 좀 더 저렴하게 택시를 이용해 보자라는 취지로 설계하였습니다.</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 나의 역할</h4>
+                                    <p>• 기획 (33%)<br>
+                                    • 프론트엔드 설계 (75%)<br>
+                                    • 데이터베이스 구축 (50%)<br>
+                                    • Heroku를 통한 배포 (100%)</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✨ 주요 기능</h4>
+                                    <p>• 택시 쉐어링 게시판<br>
+                                    • 관리자가 추적 가능<br>
+                                    • 약속 시간 이후 게시글 삭제</p>
+                                </div>
+                            </div>
+                        </details>
+                        
+                        <div class="tech-used">
+                            <h4>사용 기술</h4>
+                            <div class="tech-icons">
+                                <img src="https://skillicons.dev/icons?i=php" alt="PHP">
+                                <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-demo">🚀 데모 보기</a>
+                            <a href="#" target="_blank" class="btn-code">🔗 GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 6 - 리포트 스타일 -->
+                    <div class="report-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="report-icon">⌚</div>
+                        <h3>Smart watch project<br>„Posture Piece"</h3>
+                        <p class="report-category">스마트 워치 어플리케이션 기획</p>
+                        <p class="report-description">
+                            핵심 목표는 사용자의 건강한 생활 습관을 증진하는 것입니다. 스마트워치 센서를 통해 수집된 심박수, 걸음 수, 척추 각도(목 자세) 데이터를 분석하여 자세 문제를 식별하고, 이에 대한 개인화된 피드백을 제공하는 것을 목표로 합니다. 단순한 진단을 넘어 지속적인 피드백과 교정 지침을 제공함으로써 사용자가 자세 개선에 적극적으로 참여하도록 돕는 것이 중요합니다.
+                        </p>
+                        <div class="report-contribution">
+                            <h4>🎯 담당 영역</h4>
+                            <p>• Customer Registration (21%)<br>
+                            • Payment & Subscription (100%)<br>
+                            • Compatibility (100%)<br>
+                            • Security (100%)<br>
+                            • UML Class Diagram (30%)<br>
+                            • UI/UX Prototype (45%)</p>
+                        </div>
+                        <div class="report-meta">
+                            <span class="report-date">📅 2024</span>
+                            <span class="report-pages">📖 142 페이지</span>
+                        </div>
+                        <a href="reports/posture-piece.pdf" target="_blank" class="btn-view-report">
+                            📥 다운로드
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 학력/경력 및 강점 섹션 -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">👨‍💻 About Me</h2>
+                
+                <div class="about-grid">
+                    <!-- 왼쪽: 학력 및 경력 -->
+                    <div class="about-left" data-aos="fade-right">
+                        <h3 class="about-subtitle">🎓 학력 및 경력</h3>
+                        
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="edu-year">2018 - 2025</div>
+                                <div class="edu-content">
+                                    <h4>건국대학교 글로컬 캠퍼스</h4>
+                                    <p>컴퓨터공학부 졸업</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="edu-year">2023</div>
+                                <div class="edu-content">
+                                    <h4>Frankfurt Univ. of Applied Sciences</h4>
+                                    <p>교환학생 프로그램</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="edu-year">2021</div>
+                                <div class="edu-content">
+                                    <h4>대한민국 육군</h4>
+                                    <p>병장 만기전역</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="startup-experience">
+                            <h4>💼 창업 경험</h4>
+                            <p>창업을 통해 서비스 전 과정을 경험했습니다. 기획부터 마케팅, 영업, 개발, 설계, QA, 배포까지 직접 수행하며 비즈니스와 기술을 아우르는 시야를 갖추게 되었습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 오른쪽: 강점 -->
+                    <div class="about-right" data-aos="fade-left">
+                        <h3 class="about-subtitle">⭐ 주요 강점</h3>
+                        
+                        <div class="strength-item">
+                            <div class="strength-header">
+                                <span class="strength-icon">🎯</span>
+                                <span class="strength-title">능동적 학습</span>
+                            </div>
+                            <div class="strength-bar">
+                                <div class="strength-fill" style="width: 95%"></div>
+                            </div>
+                            <p class="strength-desc">모르는 것은 반드시 찾아서 배우는 자세</p>
+                        </div>
+
+                        <div class="strength-item">
+                            <div class="strength-header">
+                                <span class="strength-icon">🚀</span>
+                                <span class="strength-title">기술 탐구심</span>
+                            </div>
+                            <div class="strength-bar">
+                                <div class="strength-fill" style="width: 90%"></div>
+                            </div>
+                            <p class="strength-desc">새로운 기술 스택에 대한 지속적인 관심과 학습</p>
+                        </div>
+
+                        <div class="strength-item">
+                            <div class="strength-header">
+                                <span class="strength-icon">🤝</span>
+                                <span class="strength-title">협업 능력</span>
+                            </div>
+                            <div class="strength-bar">
+                                <div class="strength-fill" style="width: 88%"></div>
+                            </div>
+                            <p class="strength-desc">팀원들과의 열린 소통을 통한 효율적인 협업</p>
+                        </div>
+
+                        <div class="strength-item">
+                            <div class="strength-header">
+                                <span class="strength-icon">🤖</span>
+                                <span class="strength-title">AI 활용</span>
+                            </div>
+                            <div class="strength-bar">
+                                <div class="strength-fill" style="width: 92%"></div>
+                            </div>
+                            <p class="strength-desc">생성형 AI를 활용한 개발 생산성 및 품질 향상</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자격증 섹션 -->
+        <section id="certificates">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">📜 자격증</h2>
+                
+                <div class="certificates-grid">
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certificate-icon">📊</div>
+                        <h3>MOS Excel</h3>
+                        <p>Microsoft Office Specialist</p>
+                    </div>
+
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certificate-icon">📽️</div>
+                        <h3>MOS PowerPoint</h3>
+                        <p>Microsoft Office Specialist</p>
+                    </div>
+
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="certificate-icon">🚗</div>
+                        <h3>운전면허증</h3>
+                        <p>2종 보통</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact 섹션 -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">📬 연락하기</h2>
+                <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                    <p>프로젝트 협업이나 채용 문의는 언제든지 환영합니다!</p>
+                    <div class="contact-links">
+                        <a href="mailto:changmin.lee@example.com" class="contact-btn">
+                            <span>📧</span> Email
+                        </a>
+                        <a href="https://github.com/changmin-lee" target="_blank" class="contact-btn">
+                            <span>💻</span> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/changmin-lee" target="_blank" class="contact-btn">
+                            <span>💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                © 2025 <strong>이창민</strong>. Made with ❤️
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
