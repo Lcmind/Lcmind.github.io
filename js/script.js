@@ -116,15 +116,19 @@ projectCards.forEach(card => {
     if (details) {
         details.addEventListener('toggle', () => {
             isDetailsOpen = details.open;
+            // 상세보기 열리면 카드 고정
             if (isDetailsOpen) {
-                card.style.transform = '';
+                card.style.transform = 'none';
             }
         });
     }
     
     card.addEventListener('mousemove', (e) => {
-        // 상세보기가 열려있으면 3D 효과 비활성화
-        if (isDetailsOpen) return;
+        // 상세보기가 열려있으면 아무 효과도 안 함
+        if (isDetailsOpen) {
+            card.style.transform = 'none';
+            return;
+        }
         
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -142,6 +146,8 @@ projectCards.forEach(card => {
     card.addEventListener('mouseleave', () => {
         if (!isDetailsOpen) {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        } else {
+            card.style.transform = 'none';
         }
     });
 });
