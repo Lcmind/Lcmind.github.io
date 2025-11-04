@@ -305,6 +305,14 @@ section {
     background-clip: text;
 }
 
+.title-icon {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    color: inherit !important;
+}
+
 /* ==================== Skills Section ==================== */
 #skills {
     background: var(--bg-secondary);
@@ -379,9 +387,9 @@ section {
     animation: fadeInUp 0.6s ease;
 }
 
-/* Project Image */
+/* Project Image - 기본 (전체 화면) */
 .project-image {
-    width: 100%;
+    width: calc(100% + 4rem);
     height: 200px;
     margin: -2rem -2rem 1.5rem -2rem;
     overflow: hidden;
@@ -397,7 +405,28 @@ section {
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+/* 앱 아이콘 스타일 (먹킷라인, Focus Hub, 후딱가게만) */
+.project-app-icon {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-app-icon img {
+    width: auto !important;
+    height: 130px !important;
+    max-width: 130px;
+    object-fit: contain !important;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover .project-app-icon img {
+    transform: scale(1.08);
 }
 
 .project-image::after {
@@ -421,6 +450,7 @@ section {
     background: var(--gradient-1);
     transform: scaleX(0);
     transition: transform 0.3s ease;
+    z-index: 10;
 }
 
 .project-card:hover::before {
@@ -452,11 +482,28 @@ section {
     gap: 0.5rem;
 }
 
+.project-title-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 200px;
+}
+
 .project-card h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    flex: 1;
-    min-width: 200px;
+}
+
+.project-year {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
 }
 
 .project-type {
@@ -715,11 +762,11 @@ section {
 .report-description {
     color: var(--text-secondary);
     line-height: 1.7;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .report-contribution {
-    margin: 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     overflow: hidden;
