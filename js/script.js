@@ -204,44 +204,7 @@ projectNumbers.forEach(number => {
 });
 
 // ==================== Cursor Follow Effect (Optional) ====================
-const cursor = document.createElement('div');
-cursor.className = 'custom-cursor';
-document.body.appendChild(cursor);
-
-cursor.style.cssText = `
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    opacity: 0;
-`;
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX - 10 + 'px';
-    cursor.style.top = e.clientY - 10 + 'px';
-    cursor.style.opacity = '0.5';
-});
-
-document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0';
-});
-
-// 클릭 가능한 요소에 호버 시 커서 확대
-document.querySelectorAll('a, button, .project-card').forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'scale(1.5)';
-        cursor.style.borderColor = 'var(--accent-color)';
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'scale(1)';
-        cursor.style.borderColor = 'var(--primary-color)';
-    });
-});
+// 커스텀 커서 제거됨
 
 // ==================== Performance: Debounce Scroll Events ====================
 function debounce(func, wait) {
