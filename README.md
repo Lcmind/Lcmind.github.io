@@ -100,7 +100,6 @@ potforlio/
 
 - 📧 Email: ckealss@naver.com
 - 💻 GitHub: [github.com/Lcmind](https://github.com/Lcmind)
-- 💼 LinkedIn: linkedin.com/in/changmin-lee
 
 ---
 
