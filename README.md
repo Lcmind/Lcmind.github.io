@@ -98,7 +98,7 @@ potforlio/
 
 ## 📞 연락처
 
-- 📧 Email: changmin.lee@example.com
+- 📧 Email: ckealss@naver.com
 - 💻 GitHub: [github.com/Lcmind](https://github.com/Lcmind)
 - 💼 LinkedIn: linkedin.com/in/changmin-lee
 
